@@ -1,16 +1,57 @@
+.element-header {
+  text-transform: uppercase;
+  color: red;
+}
+
+
+:root {
+  --main-text-color: #222;
+  --body-bg-color: #ccc;
+  --main-bg-color:#E6E6FA;
+  --padder:3%;
+  font-family: arial, sans-serif;
+}
+
+
 html {
   box-sizing: border-box;
+  height: 100%;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+body {
+  background-color: var(--body-bg-color);
+}
+
 img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+
+/* animations */
+@keyframes fadein {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+main {
+  background-color: var(--main-bg-color);
+  padding: var(--padder);
+  animation: fadein .5s 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0)
 }
 
 /* header */
@@ -22,11 +63,12 @@ header {
     
 }
 
+.nav-header {
+  position: sticky;
+  top: 0;
+}
 @media screen and (min-width: 500px) {
-  .nav-header {
-    position: sticky;
-    top: 0;
-  }
+  
 
   .nav-header ul {
       display: flex;
@@ -35,6 +77,13 @@ header {
   .nav-header li {
 
   }
+}
+
+/* main */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* headings and type */
