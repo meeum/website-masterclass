@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+
+header {
+}
+
+.inner-header {
+    
+}
+
+@media screen and (min-width: 500px) {
+  .nav-header {
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-header ul {
+      display: flex;
+  }
+
+  .nav-header li {
+
+  }
+}
+
+/* headings and type */
+
+.heading-main {
+  font-size: 3rem;
+}
+
+.heading-large {
+  font-size: 2rem;
+}
+
+.heading-medium {
+  font-size: 1.5rem;
+}
+
+/* hero */
+.hero-module {
+  position: relative;
+}
+
+.hero-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  /* http://www.colorzilla.com/gradient-editor/ */
+}
+
+.hero-content .heading-main,
+.hero-content p {
+  color: #f1f1f1;
+}
