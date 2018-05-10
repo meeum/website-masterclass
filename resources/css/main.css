@@ -42,7 +42,10 @@ html {
   box-sizing: border-box;
   height: 100%;
   font-size: 16px;
-  
+}
+
+@media screen and (min-width: 600px) {
+   
 }
 
 *,
@@ -215,6 +218,7 @@ blockquote cite {
   font-style: normal;
 }
 
+/* Tables */
 table {
   table-layout: fixed;
   width: 100%;
