@@ -224,9 +224,29 @@ th {
   text-align: left;
 }
 
-/* Navigation */
+/* Form elements */
 
 
+button,
+.button {
+  background-color: var(--color-primary-a);
+  color: white;
+  border-radius: 4rem;
+  padding: 1rem;
+  min-width: 208px;
+  cursor: pointer; /* talk about this */ 
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--color-secondary-a); 
+}
+
+button:disabled,
+.button:disabled {
+  opacity: 0.5;
+  
+}
 
 /* hero */
 
