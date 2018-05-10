@@ -1,23 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Rubik:500');
+
 .element-header {
   text-transform: uppercase;
   background-color: #222;
   color: #f1f1f1;
   padding: var(--spacer);
   margin-bottom: var(--spacer);
+  /* position: sticky;
+  top: 0; */
 }
 
 :root {
-  --main-text-color: #222;
-  --body-bg-color: #333;
-  --main-bg-color: rgb(180, 180, 235);
+  --font-heading: 'Rubik',sans-serif;
+  --font-default: 'Karla',sans-serif;
+
+  --color-white: #E8EEF4;
+
+  --color-primary-a: #63dbc1;
+  --color-primary-b: #4952a3;
+  --color-primary-c: #ff5b5e;
+
+
+  --color-secondary-a: #53c1a9;
+  --color-secondary-b: #28313B;
+  --color-secondary-c: #97a4b1;
+  --color-secondary-d: #319bf5;
+  --color-secondary-e: #34495e;
+
+
+
+  --main-text-color: var(--color-secondary-e);
+  --heading-text-color: var(--color-secondary-b);
+  --body-bg-color:var(--color-primary-c);
+  --main-bg-color: var(--color-white);
   --padder: 1%;
   --spacer: 20px;
-  font-family: arial, sans-serif;
+  /* font-family: arial, sans-serif; */
 }
 
 html {
   box-sizing: border-box;
   height: 100%;
+  font-size: 16px;
+  
 }
 
 *,
@@ -28,6 +53,10 @@ html {
 
 body {
   background-color: var(--body-bg-color);
+  font-family: var(--font-default);
+  line-height: 2rem;
+  color: var(--main-text-color);
+  font-size: 1.125rem;
 }
 
 .inner {
@@ -105,17 +134,81 @@ main {}
 
 /* headings and type */
 
-.heading-main {
-  font-size: 3rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+.page-title,
+.section-title,
+.subtitle,
+.heading-small,
+.button {
+  font-family: var(--font-heading);
+  color: var(--heading-text-color);
 }
 
-.heading-large {
-  font-size: 2rem;
+h1,
+.page-title {
+  font-size: 5rem;
+  line-height: 1;
+  letter-spacing: 0.6px;
 }
 
-.heading-medium {
+h2,
+.section-title {
+  font-size: 3rem; /* 48px */
+}
+
+h3,
+.subtitle {
   font-size: 1.5rem;
 }
+
+h4,
+.button,
+.heading-small {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h5,
+.detail-copy {
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+blockquote {
+  font-family: var(--font-heading);
+  
+  color: var(--color-secondary-e);
+  
+  border-left: 3px solid var(--color-primary-a);
+  padding-left: 2rem;
+}
+
+blockquote p {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+blockquote cite {
+  font-size: 1rem;
+  font-style: normal;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+/* Navigation */
+
+
 
 /* hero */
 
