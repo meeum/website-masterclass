@@ -1,3 +1,4 @@
+// http://chapter31.com/2006/12/07/including-js-files-from-within-js-files/
 //this function includes all necessary js files for the application
 function include(file) {
   var script = document.createElement("script");
@@ -12,8 +13,8 @@ function include(file) {
 }
 
 /* include any js files here */
-include("resources/js/css-var-polyfill.js");
+include("/resources/js/css-var-polyfill.js");
 //github.com/jhildenbiddle/css-vars-ponyfill
 
-include("resources/js/jquery-3.3.1.min.js");
-include("resources/js/scripts.js");
+include("/resources/js/jquery-3.3.1.min.js");
+include("/resources/js/scripts.js");
