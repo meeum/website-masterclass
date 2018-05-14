@@ -113,6 +113,50 @@ header {}
 .inner-header {}
 
 
+/* links */
+
+a {
+  color: var(--color-primary-b);
+}
+
+a:hover {
+  color: var(--color-secondary-b);  
+}
+
+a:visited {
+  color: var(--color-secondary-b);
+}
+
+.file-list {
+  list-style: none;
+}
+
+.file-list a {
+  background-size: 30px;
+  display: block;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+}
+
+a[href*="pdf"] {
+  background-image: url(/resources/icons/icon-pdf.svg);
+}
+
+a[href*="doc"] {
+  background-image: url(/resources/icons/icon-docx.svg);
+}
+
+a[href*="xls"] {
+  background-image: url(/resources/icons/icon-xlsx.svg);
+}
+
+a[href*="jpg"],
+a[href*="png"],
+a[href*="gif"] {
+  background-image: url(/resources/icons/icon-img.svg);
+}
+
+
 /* navigation */
 
 .nav-header {
@@ -151,7 +195,9 @@ header {}
 
 /* main */
 
-main {}
+main {
+
+}
 
 /* headings and type */
 
@@ -218,6 +264,8 @@ blockquote cite {
   font-style: normal;
 }
 
+
+
 /* Tables */
 table {
   table-layout: fixed;
@@ -239,6 +287,7 @@ button,
   padding: 1rem;
   min-width: 208px;
   cursor: pointer; /* talk about this */ 
+  border: none; /* talk about this too */
 }
 
 button:hover,
