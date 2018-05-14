@@ -139,21 +139,21 @@ a:visited {
 }
 
 a[href*="pdf"] {
-  background-image: url(/resources/icons/icon-pdf.svg);
+  background-image: url(../icons/icon-pdf.svg);
 }
 
 a[href*="doc"] {
-  background-image: url(/resources/icons/icon-docx.svg);
+  background-image: url(../icons/icon-docx.svg);
 }
 
 a[href*="xls"] {
-  background-image: url(/resources/icons/icon-xlsx.svg);
+  background-image: url(../icons/icon-xlsx.svg);
 }
 
 a[href*="jpg"],
 a[href*="png"],
 a[href*="gif"] {
-  background-image: url(/resources/icons/icon-img.svg);
+  background-image: url(../icons/icon-img.svg);
 }
 
 
