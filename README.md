@@ -28,6 +28,6 @@
 | SVG social icons||||
 | YouTube embed  |✔️   |  ||
 | Googe Maps embed  |✔️   |  ||
-| Local video
+| Local video  |✔️   |  ||
 | Local audio
 | Table data
