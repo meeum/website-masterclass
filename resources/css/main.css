@@ -28,6 +28,9 @@
   --color-secondary-e: #34495e;
 
 
+  --breapoint-mobile: 600px;
+
+
 
   --main-text-color: var(--color-secondary-e);
   --heading-text-color: var(--color-secondary-b);
@@ -45,7 +48,9 @@ html {
 }
 
 @media screen and (min-width: 600px) {
-   
+   body {
+     
+   }
 }
 
 *,
