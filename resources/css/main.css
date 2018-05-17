@@ -177,6 +177,11 @@ a[href*="gif"] {
   border-bottom: 2px solid transparent;
 }
 
+.nav-header .active {
+  border-bottom-color: currentColor;
+  font-weight: 700;
+}
+
 .nav-header a:hover {
   color: var(--color-secondary-a);
   border-bottom-color: currentColor;
