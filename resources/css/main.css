@@ -57,7 +57,7 @@ html {
 body {
   background-color: var(--body-bg-color);
   font-family: var(--font-default);
-  line-height: 2rem;
+  line-height: 1.4;
   color: var(--main-text-color);
   font-size: 1.125rem;
 }
@@ -230,6 +230,7 @@ h1,
 h2,
 .section-title {
   font-size: 3rem; /* 48px */
+  line-height: 1;
 }
 
 h3,
