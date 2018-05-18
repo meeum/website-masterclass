@@ -11,12 +11,28 @@ function active_menu() {
 }
 
 active_menu();
+
+
 // add a body class
 $(bodyClass()).addClass('cock');
 
 function bodyClass() {
     return 'body';
 }
+
+
+// open mobile menu
+$(".nav-prompt").click(function () {
+  $(".nav-header").attr("aria-expanded", function(index, attr) {
+    return attr == "true" ? "false" : "true";
+  });
+
+  if ($(".nav-prompt").text() == "Open Navigation") {
+    $(this).text("Close Navigation");
+  } else {
+    $(this).text("Open Navigation");
+  }; 
+});
 
 
 //iframe
