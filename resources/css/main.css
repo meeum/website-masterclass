@@ -248,6 +248,31 @@ a[href*="gif"] {
   }
 }
 
+
+/* social */
+/*https://simpleicons.org*/
+.nav-social-links ul {
+  list-style: none;
+}
+
+.social-link {
+  max-width: 50px;
+  display: block;
+  filter: invert(25%);
+  transform: scale(.8);
+  transition: all 0.2s;
+}
+.social-link:hover {
+  filter: unset;
+  transform: scale(1);
+} 
+
+
+/* .social-links--facebook:before {
+  content: url('/resources/icons/icon-facebook.svg');
+} */
+
+
 /* main */
 
 main {
