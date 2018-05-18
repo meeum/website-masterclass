@@ -238,6 +238,7 @@ a[href*="gif"] {
 .nav-header a:hover {
   color: var(--color-secondary-e);
   border-bottom-color: currentColor;
+  /* transform: rotate(-15deg); */
 }
 
 @media screen and (min-width: 600px) {
@@ -253,7 +254,9 @@ a[href*="gif"] {
 /*https://simpleicons.org*/
 .nav-social-links ul {
   list-style: none;
+  
 }
+
 
 .social-link {
   max-width: 50px;
@@ -264,7 +267,7 @@ a[href*="gif"] {
 }
 .social-link:hover {
   filter: unset;
-  transform: scale(1);
+  transform: scale(1) rotate(-15deg);
 } 
 
 
