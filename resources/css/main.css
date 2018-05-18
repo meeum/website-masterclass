@@ -29,7 +29,7 @@
 
   --main-text-color: var(--color-secondary-e);
   --heading-text-color: var(--color-secondary-b);
-  --body-bg-color: var(--color-primary-c);
+  --body-bg-color: var(--color-secondary-a);
   --main-bg-color: var(--color-white);
   --padder: 1%;
   --spacer: 20px;
@@ -59,10 +59,7 @@ html {
   font-size: 16px;
 }
 
-@media screen and (min-width: 600px) {
-  body {
-  }
-}
+
 
 *,
 *:before,
@@ -72,11 +69,17 @@ html {
 
 body {
   background-color: var(--body-bg-color);
-  background: url(/resources/images/background.jpg) no-repeat fixed 0 0 / cover;
+  
   font-family: var(--font-default);
   line-height: 1.4;
   color: var(--main-text-color);
   font-size: 1.125rem;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background: url(/resources/images/background.jpg) no-repeat fixed 0 0 / cover;
+  }
 }
 
 .inner {
@@ -209,7 +212,7 @@ a[href*="gif"] {
 }
 
 .nav-header a {
-  color: var(--color-primary-a);
+  color: var(--color-secondary-b);
   font-size: 1rem;
   font-family: var(--font-heading);
   padding: 20px 5px;
@@ -233,7 +236,7 @@ a[href*="gif"] {
 }
 
 .nav-header a:hover {
-  color: var(--color-secondary-a);
+  color: var(--color-secondary-e);
   border-bottom-color: currentColor;
 }
 
