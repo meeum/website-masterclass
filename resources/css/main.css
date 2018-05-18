@@ -61,6 +61,7 @@ html {
 
 body {
   background-color: var(--body-bg-color);
+  background: url(/resources/images/background.jpg) no-repeat fixed 0 0 / cover;
   font-family: var(--font-default);
   line-height: 1.4;
   color: var(--main-text-color);
