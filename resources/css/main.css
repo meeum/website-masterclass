@@ -361,16 +361,27 @@ h5,
 }
 
 .content-area-grid {
+  
+}
+
+.content-area-grid-narrow {
+  
+}
+
+@media screen and (min-width: 700px) {
+
+  .content-area-grid {
   display: grid;
   grid-template-columns: 48% 48%;
   justify-content: space-between;
 }
 
-.content-area-grid-narrow {
+  .content-area-grid-narrow {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   justify-content: space-between;
+}
 }
 
 /* elements */
