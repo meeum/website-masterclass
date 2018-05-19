@@ -40,7 +40,7 @@ $(".nav-prompt").click(function () {
 //iframe
 $("iframe").wrap('<div class="iframe-container"></div>');
 
-function thisthing() {
+function imageGallery() {
   if (!$(".image-gallery").length) {
     return;
   }
@@ -50,7 +50,7 @@ function thisthing() {
 
 }
 
-thisthing();
+imageGallery();
 
 
 

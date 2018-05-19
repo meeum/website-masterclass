@@ -97,11 +97,12 @@ body {
 }
 
 .inner-main {
-  background-color: rgba(var(--color-white-rgb), 0.9);
+  background-color: rgba(var(--color-white-rgb), 0.8);
 }
 
 .inner-footer {
   background-color: var(--main-bg-color);
+  margin-bottom: 20px;
 }
 
 img,
@@ -503,8 +504,8 @@ button:disabled,
   margin: 0;
   padding: 0;
   display: grid;
-   grid-gap: 10px;
-   grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
    
 }
 
