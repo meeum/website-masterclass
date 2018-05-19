@@ -260,11 +260,20 @@ a[href*="gif"] {
 
 /* social */
 /*https://simpleicons.org*/
-.nav-social-links ul {
+.nav-social-links  {
   list-style: none;
-  
+  padding: 0;
+  margin: 0;
 }
 
+.nav-social-links li {
+  display: inline-block;
+}
+
+.nav-social-links img {
+  width: 100%;
+  height: 100%;
+}
 
 .social-link {
   max-width: 50px;
