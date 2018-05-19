@@ -69,7 +69,8 @@ html {
 }
 
 body {
-  background-color: var(--body-bg-color);
+  background-color: ;
+  background: url(/resources/video/travel.jpg) no-repeat fixed 0 0 / cover var(--body-bg-color);
   
   font-family: var(--font-default);
   line-height: 1.4;
@@ -79,7 +80,7 @@ body {
 
 @media screen and (min-width: 800px) {
   body {
-    background: url(/resources/images/background.jpg) no-repeat fixed 0 0 / cover;
+    
   }
 }
 
