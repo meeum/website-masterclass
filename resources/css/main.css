@@ -264,6 +264,7 @@ a[href*="gif"] {
   filter: invert(25%);
   transform: scale(.8);
   transition: all 0.2s;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
 }
 .social-link:hover {
   filter: unset;
