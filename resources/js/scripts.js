@@ -34,10 +34,12 @@ $(".nav-prompt").click(function () {
   }; 
 });
 
-// gallery http://dbrekalo.github.io/simpleLightbox/
 
-$(".image-gallery a").simpleLightbox();
 
 
 //iframe
 $("iframe").wrap('<div class="iframe-container"></div>');
+
+// gallery http://dbrekalo.github.io/simpleLightbox/
+
+$(".image-gallery a").simpleLightbox();

@@ -100,6 +100,10 @@ body {
   background-color: rgba(var(--color-white-rgb), 0.9);
 }
 
+.inner-footer {
+  background-color: var(--main-bg-color);
+}
+
 img,
 video {
   max-width: 100%;
@@ -127,6 +131,7 @@ main {
 /* header */
 
 header {
+  
 }
 
 .inner-header {
