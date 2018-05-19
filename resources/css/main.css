@@ -287,7 +287,7 @@ a[href*="gif"] {
 .social-link {
   max-width: 50px;
   display: block;
-  filter: invert(25%);
+  /* filter: invert(25%); */
   transform: scale(.8);
   transition: all var(--transition-time);
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
