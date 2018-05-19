@@ -94,7 +94,7 @@ body {
 }
 
 .inner-header {
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
 }
 
 .inner-main {
@@ -128,15 +128,22 @@ main {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0, 0, 0);
+  position: relative;
 }
 
 /* header */
 
 header {
-  
+  position: relative;
 }
 
 .inner-header {
+}
+
+/* footer */
+
+footer {
+  position: relative;
 }
 
 /* links */
@@ -418,6 +425,21 @@ button:disabled,
 .button:disabled {
   opacity: 0.5;
 }
+
+
+/* background video */
+.background-video {
+
+  position: fixed;
+  left: 0; 
+  top: 0;
+min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
 
 /* hero */
 
