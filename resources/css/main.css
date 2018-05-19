@@ -239,9 +239,9 @@ a[href*="gif"] {
 
 .nav-header a:hover {
   color: var(--color-secondary-e);
-  /* border-bottom-color: currentColor; */
+  border-bottom-color: currentColor;
   /* transform: rotate(-15deg); */
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 @media screen and (min-width: 600px) {
