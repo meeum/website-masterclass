@@ -222,6 +222,7 @@ a[href*="gif"] {
   text-transform: uppercase;
   transition: all 0.2s;
   border-bottom: 1px solid var(--color-secondary-c);
+  transition: 0.2s all;
 }
 
 @media screen and (min-width: 600px) {
@@ -237,8 +238,9 @@ a[href*="gif"] {
 
 .nav-header a:hover {
   color: var(--color-secondary-e);
-  border-bottom-color: currentColor;
+  /* border-bottom-color: currentColor; */
   /* transform: rotate(-15deg); */
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 600px) {
@@ -268,7 +270,7 @@ a[href*="gif"] {
 }
 .social-link:hover {
   filter: unset;
-  transform: scale(1) rotate(-15deg);
+  transform: scale(1);
 } 
 
 
