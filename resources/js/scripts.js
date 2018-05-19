@@ -40,6 +40,17 @@ $(".nav-prompt").click(function () {
 //iframe
 $("iframe").wrap('<div class="iframe-container"></div>');
 
-// gallery http://dbrekalo.github.io/simpleLightbox/
+function thisthing() {
+  if (!$(".image-gallery").length) {
+    return;
+  }
+  // gallery http://dbrekalo.github.io/simpleLightbox/
 
-$(".image-gallery a").simpleLightbox();
+  $(".image-gallery a").simpleLightbox();
+
+}
+
+thisthing();
+
+
+
