@@ -467,20 +467,7 @@ body {
   }
 }
 
-@supports (object-fit: cover) {
-  .bg-video {
-    
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .background-video {
-    width: 100%;
-  }
-}
-
 /* hero */
-
 .hero-module {
   position: relative;
 }
