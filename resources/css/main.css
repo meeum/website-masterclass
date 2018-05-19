@@ -44,7 +44,7 @@
   /* font-family: arial, sans-serif; */
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   :root {
     --font-size-page-title: 5rem;
     --font-size-section-title: 3rem; /* 48px */
@@ -77,7 +77,7 @@ body {
   font-size: 1.125rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   body {
     background: url(/resources/images/background.jpg) no-repeat fixed 0 0 / cover;
   }
@@ -195,7 +195,7 @@ a[href*="gif"] {
 .nav-prompt {
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .nav-prompt {
     display: none;
   }
@@ -212,7 +212,7 @@ a[href*="gif"] {
   overflow: hidden;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .nav-header[aria-expanded="false"] {
     max-height: 100vh;
   }
@@ -240,7 +240,7 @@ a[href*="gif"] {
   transition: 0.2s all;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .nav-header a {
     border-bottom: 2px solid transparent;
   }
@@ -258,7 +258,7 @@ a[href*="gif"] {
   /* transform: scale(1.1); */
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .nav-header ul {
     display: flex;
     justify-content: space-between;
@@ -368,7 +368,7 @@ h5,
   
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
 
   .content-area-grid {
   display: grid;
@@ -474,7 +474,7 @@ body {
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 
   .hero-content {
   background: -moz-linear-gradient(
