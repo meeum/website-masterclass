@@ -127,22 +127,80 @@ video {
   }
 }
 
+@keyframes spin { 100% {  transform:rotate(360deg); } }
+
 main {
-  animation: fadein 0.5s 1;
+  /* animation: fadein 0.5s 1;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
-  position: relative;
+  -webkit-transform: translate3d(0, 0, 0); */
+  /* position: relative; */
 }
 
 /* header */
 
 header {
-  position: relative;
+  /* position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(var(--color-white-rgb)); */
+
+ /* margin: calc(-1 * var(--padder)) calc(-1 * var(--padder)) 0 calc(-1 * var(--padder));  */
+  
 }
 
-.inner-header {
+.header-assets {
+   padding: var(--padder);
+     overflow: hidden;/* float hack*/
 }
+
+.logo-wrapper {
+  width: 20%;
+  float: left;
+}
+
+.logo-wrapper a:hover img {
+  animation:spin .5s linear ;
+}
+
+.logo {
+  max-width: 50px;
+  width: 100%;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-site-title);
+  color: #000;
+  font-weight: 700;
+  width: 80%;
+  float: right;
+  text-align: right;
+}
+
+
+
+.navigation-assets {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    /* position: relative; */
+    
+  }
+
+  
+} 
+
+/* see nav-social-links section below for header overrides */
+
+
+
+
 
 /* footer */
 
