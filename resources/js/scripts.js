@@ -20,11 +20,19 @@ $(".nav-prompt").click(function () {
     return attr == "true" ? "false" : "true";
   });
 
+  // if ($(".nav-prompt").text() == "Open Navigation") {
+  //   $(this).text("Close Navigation").addClass('nav-is-open').removeClass('nav-is-closed');
+  // } else {
+  //   $(this).text("Open Navigation").addClass("nav-is-closed").removeClass("nav-is-open");;
+  // }; 
+
   if ($(".nav-prompt").text() == "Open Navigation") {
     $(this).text("Close Navigation");
   } else {
     $(this).text("Open Navigation");
   }; 
+
+  
 });
 
 
