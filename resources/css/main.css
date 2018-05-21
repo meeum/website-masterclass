@@ -56,13 +56,15 @@
   }
 }
 
+main {
+  display: block; /* discuss */
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
   font-size: 16px;
 }
-
-
 
 *,
 *:before,
