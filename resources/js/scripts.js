@@ -13,13 +13,6 @@ function active_menu() {
 active_menu();
 
 
-// add a body class
-$(bodyClass()).addClass('cock');
-
-function bodyClass() {
-    return 'body';
-}
-
 
 // open mobile menu
 $(".nav-prompt").click(function () {
