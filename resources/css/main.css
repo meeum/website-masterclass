@@ -31,10 +31,11 @@
   --heading-text-color: var(--color-secondary-b);
   --body-bg-color: var(--color-primary-a);
   --main-bg-color: var(--color-white);
-  --padder: 1%;
+  --padder: 2%;
   --spacer: 20px;
   --transition-time: 0.3s;
 
+  --font-size-site-title: 2rem;
   --font-size-page-title: 2.5rem;
   --font-size-section-title: 1.8rem; /* 48px */
   --font-size-sub-title: 1.5rem;
@@ -46,6 +47,7 @@
 
 @media screen and (min-width: 800px) {
   :root {
+    --font-size-site-title: 3rem;
     --font-size-page-title: 5rem;
     --font-size-section-title: 3rem; /* 48px */
     --font-size-sub-title: 1.5rem;
@@ -69,41 +71,40 @@ html {
 }
 
 body {
-  background-color: ;
+  
   background: url(/resources/video/travel.jpg) no-repeat fixed 0 0 / cover var(--body-bg-color);
   
   font-family: var(--font-default);
   line-height: 1.4;
   color: var(--main-text-color);
   font-size: 1.125rem;
+  /* margin: 0 var(--padder); */
 }
 
-@media screen and (min-width: 800px) {
-  body {
-    
-  }
-}
 
-.inner {
-  padding: var(--padder);
+
+header,
+.navigation-assets,
+main,
+footer {
+  padding: 0 var(--padder);
   max-width: 1200px;
   margin: 0 auto;
+  background-color: rgba(var(--color-white-rgb), 0.8);
 }
 
 .inner-nav {
   background-color: var(--body-bg-color);
 }
 
-.inner-header {
-  /* background-color: var(--main-bg-color); */
-}
+
 
 .inner-main {
-  background-color: rgba(var(--color-white-rgb), 0.8);
+  
 }
 
 .inner-footer {
-  background-color: rgba(var(--color-white-rgb), 0.8);
+  
   margin-bottom: 20px;
 }
 
