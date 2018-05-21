@@ -31,7 +31,11 @@ $(".nav-prompt").click(function () {
 
 
 //iframe
-$("iframe").wrap('<div class="iframe-container"></div>');
+iframeFix();
+
+function iframeFix() {
+  $("iframe").wrap('<div class="iframe-container"></div>');
+}
 
 function imageGallery() {
   if (!$(".image-gallery").length) {
