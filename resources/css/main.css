@@ -89,7 +89,7 @@ header,
 .navigation-assets,
 main,
 footer {
-  padding: 0 var(--padder);
+  padding:  var(--padder);
   max-width: 1200px;
   margin: 0 auto;
   background-color: rgba(var(--color-white-rgb), 0.8);
@@ -257,6 +257,7 @@ a[href*="gif"] {
 .nav-prompt {
   padding: var(--padder) 0;
   width: 100%;
+  /* background-color: var(--body-bg-color); */
 }
 
 @media screen and (min-width: 800px) {
