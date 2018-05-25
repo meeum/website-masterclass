@@ -139,6 +139,10 @@ main {
 
 /* header */
 
+header,
+footer {
+  background-color: var(--color-primary-b);
+}
 header {
   /* position: sticky;
   top: 0;
@@ -146,7 +150,7 @@ header {
   background-color: rgb(var(--color-white-rgb)); */
 
  /* margin: calc(-1 * var(--padder)) calc(-1 * var(--padder)) 0 calc(-1 * var(--padder));  */
-  
+  background-color: var(--color-primary-b);
 }
 
 .header-assets {
