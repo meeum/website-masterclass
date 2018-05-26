@@ -714,6 +714,6 @@ main {
   animation: fadein 0.5s 1;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0); */
-  /* position: relative;
+  -webkit-transform: translate3d(0, 0, 0); 
+  /* position: relative;*/
 }
