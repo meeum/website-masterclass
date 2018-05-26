@@ -41,11 +41,11 @@ $(".nav-prompt").click(function () {
 //iframe
 
 
-// function iframeFix() {
-//   $("iframe").wrap('<div class="iframe-container"></div>');
-// }
+function iframeFix() {
+  $("iframe").wrap('<div class="iframe-container"></div>');
+}
 
-// iframeFix();
+iframeFix();
 
 // image gallery
 function imageGallery() {
