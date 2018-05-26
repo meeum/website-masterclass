@@ -30,13 +30,16 @@
   --main-text-color: var(--color-secondary-e);
   --heading-text-color: var(--color-secondary-b);
   --alternative-text-color: var(--color-almost-white);
+  --error-color: var(--color-primary-c);
 
   --body-bg-color: #fff;
   --main-bg-color: var(--color-almost-white);
+  --secondary-bg-color: var(--color-almost-white);
   --alternative-bg-color: var(--color-primary-b);
 
   --padder: 2%;
   --spacer: 20px;
+  --spacer-large: 80px;
   --transition-time: 0.3s;
 
   --font-size-site-title: 2rem;
@@ -46,14 +49,15 @@
   --font-size-heading-small: 1rem;
   --font-size-detail-copy: 0.875rem;
 
-  /* font-family: arial, sans-serif; */
+  --area-wide: 1200px;
+  --area-narrow: 800px;
 }
 
 @media screen and (min-width: 800px) {
   :root {
     --font-size-site-title: 54px;
     --font-size-page-title: 80px;
-    --font-size-section-title: 48px; 
+    --font-size-section-title: 48px;
     --font-size-sub-title: 24px;
     --font-size-heading-small: 16px;
     --font-size-detail-copy: 14px;
@@ -88,10 +92,7 @@ body {
 }
 
 .inner {
-  padding: 0 var(--padder);
-  max-width: 1200px;
-  margin: 0 auto;
-  /* background-color: rgba(var(--color-almost-white-rgb), 0.8); */
+  
 }
 
 /* common elements */
@@ -129,8 +130,7 @@ main {
 /* header */
 
 header,
-.navigation,
-footer {
+.navigation {
   background-color: var(--alternative-bg-color);
 }
 
@@ -161,192 +161,6 @@ footer {
   width: 80%;
   float: right;
   text-align: right;
-}
-
-@media screen and (min-width: 800px) {
-  header {
-    /* position: relative; */
-  }
-}
-
-
-/* footer */
-
-footer {
-  position: relative;
-}
-
-/* links */
-
-a {
-  color: var(--color-primary-c);
-}
-
-a:hover {
-  color: var(--color-secondary-b);
-}
-
-a:visited {
-  color: var(--color-secondary-b);
-}
-
-.file-list {
-  list-style: none;
-}
-
-.file-list a {
-  background-size: 30px;
-  display: block;
-  padding-left: 40px;
-  background-repeat: no-repeat;
-}
-
-a[href*="pdf"] {
-  background-image: url(../icons/icon-pdf.svg);
-}
-
-a[href*="doc"] {
-  background-image: url(../icons/icon-docx.svg);
-}
-
-a[href*="xls"] {
-  background-image: url(../icons/icon-xlsx.svg);
-}
-
-/* this fucks with the gallery so get rid of it*/
-/* a[href*="jpg"],
-a[href*="png"],
-a[href*="gif"] {
-  background-image: url(../icons/icon-img.svg);
-} */
-
-/* navigation */
-
-.navigation {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding: 0;
-}
-
-.nav-prompt {
-  padding: var(--padder) 0;
-  width: 100%;
-  background-color: var(--alternative-bg-color);
-  color: var(--alternative-text-color);
-  border-top: 1px solid #34495E;
-}
-
-@media screen and (min-width: 800px) {
-  .nav-prompt {
-    display: none;
-  }
-}
-
-.nav-inner {
-  clear: both;
-  transition: .2s ease-in-out;
-  overflow: hidden;
-}
-
-.nav-inner ul {
-  padding: 0 var(--padder);
-  margin: 0;
-}
-
-.nav-inner[aria-expanded="false"] {
-  max-height: 0;
-}
-
-@media screen and (min-width: 800px) {
-  .nav-inner[aria-expanded="false"] {
-    max-height: 100vh;
-  }
-}
-
-.nav-inner[aria-expanded="true"] {
-  max-height: 100vh;
-}
-
-.nav-inner li {
-  text-align: center;
-  list-style: none;
-}
-
-.nav-inner a {
-  color: var(--alternative-text-color);
-  font-size: 1rem;
-  font-family: var(--font-heading);
-  padding: 20px 5px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  
-  border-bottom: 1px solid var(--color-secondary-c);
-
-  transition: all var(--transition-time);
-}
-
-@media screen and (min-width: 800px) {
-  .nav-inner a {
-    border-bottom: 2px solid transparent;
-  }
-}
-
-.nav-inner .active {
-  border-bottom-color: currentColor;
-  font-weight: 700;
-}
-
-.nav-inner a:hover {
-  /* color: var(--color-secondary-e); */
-  /* border-bottom-color: currentColor; */
-  /* transform: rotate(-15deg); */
-  /* transform: scale(1.1); */
-  text-decoration: underline;
-}
-
-@media screen and (min-width: 800px) {
-  .nav-inner ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-/* social */
-/*https://simpleicons.org*/
-.nav-social-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-social-links img {
-  width: 100%;
-  height: 100%;
-}
-
-.social-link {
-  max-width: 30px;
-  display: block;
-  /* filter: invert(25%); */
-  transform: scale(0.8);
-  transition: all var(--transition-time);
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
-}
-.social-link:hover {
-  filter: unset;
-  transform: scale(1);
-}
-
-/* push icons to the right of the header */
-/* header .nav-social-links {
-  float: right;
-} */
-
-/* horizontal view in footer */
-footer .nav-social-links li {
-  display: inline-block;
 }
 
 /* headings and type */
@@ -396,7 +210,202 @@ h5,
   line-height: 1rem;
 }
 
+/* links */
+
+a {
+  color: var(--color-primary-c);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-secondary-b);
+}
+
+a:visited {
+  color: var(--color-secondary-b);
+}
+
+/* footer */
+
+footer {
+  /* position: relative; */
+}
+
+.footer-subscribe {
+  background-color: var(--secondary-bg-color);
+  padding: var(--spacer-large) 0;
+  text-align: center;
+}
+
+.footer-notices {
+  background-color: var(--alternative-bg-color);
+  padding: var(--spacer) 0;
+}
+
+.footer-notices .inner {
+  text-align: center;
+}
+
+.copyright {
+  color: #fff;
+}
+
+/* social */
+/*https://simpleicons.org*/
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
+}
+
+.social-link {
+  max-width: 30px;
+  display: block;
+  /* filter: invert(25%); */
+  transform: scale(0.8);
+  transition: all var(--transition-time);
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
+}
+.social-link:hover {
+  filter: unset;
+  transform: scale(1);
+}
+
+@media screen and (min-width: 800px) {
+  .footer-notices .inner {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .social-links {
+    text-align: right;
+  }
+}
+
+/* navigation */
+
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 20px 0;
+}
+
+.nav-prompt {
+  padding: var(--padder) 0;
+  width: 100%;
+  background-color: var(--alternative-bg-color);
+  color: var(--alternative-text-color);
+  border-top: 1px solid #34495e;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-prompt {
+    display: none;
+  }
+}
+
+.nav-inner {
+  clear: both;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.nav-inner ul {
+  padding: 0 var(--padder);
+  padding: 0;
+  margin: 0;
+}
+
+.nav-inner[aria-expanded="false"] {
+  max-height: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-inner[aria-expanded="false"] {
+    max-height: 100vh;
+  }
+}
+
+.nav-inner[aria-expanded="true"] {
+  max-height: 100vh;
+}
+
+.nav-inner li {
+  text-align: center;
+  list-style: none;
+}
+
+.nav-inner a {
+  color: var(--alternative-text-color);
+  /* font-size: 1rem; */
+  font-family: var(--font-heading);
+  padding: 20px 5px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid var(--color-secondary-c);
+
+  transition: all var(--transition-time);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-inner a {
+    border-bottom: 2px solid transparent;
+    padding: 0;
+  }
+}
+
+.nav-inner .active {
+  border-bottom-color: currentColor;
+  font-weight: 700;
+}
+
+.nav-inner a:hover,
+.nav-inner a:focus {
+  /* color: var(--color-secondary-e); */
+  border-bottom-color: currentColor;
+  /* transform: rotate(-15deg); */
+  /* transform: scale(1.1); */
+  /* text-decoration: underline; */
+}
+
+@media screen and (min-width: 800px) {
+  .nav-inner ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 /* layouts */
+.layout {
+  padding: 0 var(--padder);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.layout-wide {
+  max-width: var(--area-wide);
+  margin: 0 auto;
+}
+
+.layout-narrow {
+  max-width: var(--area-narrow);
+  margin: 0 auto;
+}
 
 .content-area {
 }
@@ -453,7 +462,26 @@ th {
 }
 
 /* Form elements */
-button {
+
+label {
+  display: block;
+  font-weight: 700;
+}
+
+/* https://css-tricks.com/styling-texty-inputs-only/ */
+
+input:not([type="submit"]):not([type="file"]) {
+  border: 1px solid var(--color-secondary-c);
+  border-radius: 4px; /* could use a variable here*/
+  background-color: #fff;
+  padding: 10px;
+  width: 480px;
+  max-width: 100%;
+  margin-bottom: var(--spacer);
+}
+
+button,
+input[type="submit"] {
   cursor: pointer; /* talk about this */
   border: none; /* talk about this too */
 }
@@ -472,15 +500,18 @@ button:hover {
 .button:hover {
   background-color: var(--color-secondary-a);
 }
-/* 
-button:disabled,
-.button:disabled {
-  opacity: 0.5;
-} */
-/* 
-body {
-  position: relative;
-} */
+
+/* mailchimp overrides*/
+#mc_embed_signup input.mce_inline_error {
+  border-color: var(--error-color);
+}
+#mc_embed_signup div.mce_inline_error {
+  background-color: transparent;
+  color: var(--error-color);
+}
+
+.response {
+}
 
 /* background video */
 .bg-video {
@@ -506,6 +537,38 @@ body {
     height: 100%;
   }
 }
+
+/* file lists */
+
+.file-list {
+  list-style: none;
+}
+
+.file-list a {
+  background-size: 30px;
+  display: block;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+}
+
+a[href*="pdf"] {
+  background-image: url(../icons/icon-pdf.svg);
+}
+
+a[href*="doc"] {
+  background-image: url(../icons/icon-docx.svg);
+}
+
+a[href*="xls"] {
+  background-image: url(../icons/icon-xlsx.svg);
+}
+
+/* this fucks with the gallery so get rid of it*/
+/* a[href*="jpg"],
+a[href*="png"],
+a[href*="gif"] {
+  background-image: url(../icons/icon-img.svg);
+} */
 
 /* hero */
 .hero-module {
