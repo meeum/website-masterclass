@@ -39,12 +39,15 @@ $(".nav-prompt").click(function () {
 
 
 //iframe
-iframeFix();
 
-function iframeFix() {
-  $("iframe").wrap('<div class="iframe-container"></div>');
-}
 
+// function iframeFix() {
+//   $("iframe").wrap('<div class="iframe-container"></div>');
+// }
+
+// iframeFix();
+
+// image gallery
 function imageGallery() {
   if (!$(".image-gallery").length) {
     return;
@@ -56,6 +59,18 @@ function imageGallery() {
 }
 
 imageGallery();
+
+// TODO - unfuck this
+// // load video
+// function loadVideo() {
+ 
+//   $('.load-later').attr("src", $(this).attr("data-src"));
+//   //$(".load-later").removeAttr("data-src");
+
+  
+// }
+
+// loadVideo();
 
 
 
