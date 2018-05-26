@@ -92,7 +92,6 @@ body {
 }
 
 .inner {
-  
 }
 
 /* common elements */
@@ -129,13 +128,12 @@ main {
 
 /* header */
 
-header,
-.navigation {
+header {
+  padding-top: var(--padder);
   background-color: var(--alternative-bg-color);
 }
 
 .header-inner {
-  padding: var(--padder);
   overflow: hidden; /* float hack*/
 }
 
@@ -282,7 +280,7 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-  .footer-notices .inner {
+  .footer-notices .layout-wide {
     display: grid;
     grid-template-columns: 48% 48%;
     justify-content: space-around;
@@ -301,7 +299,8 @@ footer {
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 20px 0;
+
+  background-color: var(--alternative-bg-color);
 }
 
 .nav-prompt {
@@ -313,6 +312,10 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
+
+  .navigation {
+      padding: 20px 0;
+  }
   .nav-prompt {
     display: none;
   }
@@ -392,19 +395,24 @@ footer {
 }
 
 /* layouts */
-.layout {
-  padding: 0 var(--padder);
-  max-width: 1200px;
+.layout-full-width,
+.layout-wide,
+.layout-narrow  {
   margin: 0 auto;
+  padding: 0 var(--padder);
 }
+
+.layout-full-width {
+  max-width: 2000px;
+  width: 100%;
+}
+
 .layout-wide {
   max-width: var(--area-wide);
-  margin: 0 auto;
 }
 
 .layout-narrow {
   max-width: var(--area-narrow);
-  margin: 0 auto;
 }
 
 .content-area {
