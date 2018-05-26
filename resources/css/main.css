@@ -355,10 +355,6 @@ header .layout-wide {
 *FOOTER
 ******************************************************************************************/
 
-footer {
-  /* position: relative; */
-}
-
 .footer-subscribe {
   background-color: var(--secondary-bg-color);
   padding: var(--spacer-large) 0;
@@ -427,14 +423,6 @@ footer {
 
 /* grids */
 
-.content-area {
-}
-
-.content-area-grid {
-}
-
-.content-area-grid-narrow {
-}
 
 @media screen and (min-width: 800px) {
   .content-area-grid {
@@ -506,8 +494,6 @@ input[type="submit"] {
   border: none; /* talk about this too */
 }
 
-button:hover {
-}
 
 .button {
   background-color: var(--color-primary-a);
@@ -530,8 +516,6 @@ button:hover {
   color: var(--error-color) !important;
 }
 
-.response {
-}
 
 /* background video */
 .bg-video {
@@ -692,10 +676,6 @@ a[href*="gif"] {
  
 }
 
-.image-gallery ul li {
-
-}
-
 .image-gallery a img {
   filter: grayscale(70%);
   transition: filter var(--transition-time), transform var(--transition-time);
@@ -731,9 +711,9 @@ a[href*="gif"] {
 }
 
 main {
-  /* animation: fadein 0.5s 1;
+  animation: fadein 0.5s 1;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0, 0, 0); */
-  /* position: relative; */
+  /* position: relative;
 }
