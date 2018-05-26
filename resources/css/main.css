@@ -629,15 +629,8 @@ a[href*="gif"] {
   .hero-content .heading-main,
   .hero-content p {
     color: #fff;
-    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-    
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8), 0px 0px 2px  rgba(0,0,0,1);
 
-    text-shadow: 0 1px black;
-
-   
-
-    
+    text-shadow: 0px 1px 10px var(--color-secondary-b);
 
     /* https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ */
   }
