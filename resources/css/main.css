@@ -240,7 +240,7 @@ footer {
   padding: var(--spacer) 0;
 }
 
-.footer-notices .inner {
+.footer-notices .layout-wide {
   text-align: center;
 }
 
