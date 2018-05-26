@@ -519,7 +519,7 @@ button:hover {
 
 /* mailchimp overrides*/
 #mc_embed_signup input.mce_inline_error {
-  border-color: var(--error-color);
+  border-color: var(--error-color) ;
 }
 #mc_embed_signup div.mce_inline_error {
   background-color: transparent;
@@ -629,6 +629,17 @@ a[href*="gif"] {
   .hero-content .heading-main,
   .hero-content p {
     color: #fff;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8), 0px 0px 2px  rgba(0,0,0,1);
+
+    text-shadow: 0 1px black;
+
+   
+
+    
+
+    /* https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ */
   }
 }
 
