@@ -234,6 +234,7 @@ header .layout-wide {
   font-family: var(--font-heading);
   font-size: var(--font-size-site-title);
   color: var(--alternative-text-color);
+  color: #fff;
   font-weight: 700;
   width: 80%;
   float: right;
@@ -333,6 +334,7 @@ header .layout-wide {
 .nav-inner a:hover,
 .nav-inner a:focus {
   /* color: var(--color-secondary-e); */
+  color: #fff;
   border-bottom-color: currentColor;
   /* transform: rotate(-15deg); */
   /* transform: scale(1.1); */
