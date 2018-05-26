@@ -3,7 +3,7 @@
 // nav
 function active_menu() {
     var url = window.location.href;
-    $(".nav-header a")
+    $(".nav-inner a")
       .filter(function() {
         return this.href == url;
       })
@@ -16,7 +16,7 @@ active_menu();
 
 // open mobile menu
 $(".nav-prompt").click(function () {
-  $(".nav-header").attr("aria-expanded", function(index, attr) {
+  $(".nav-inner").attr("aria-expanded", function(index, attr) {
     return attr == "true" ? "false" : "true";
   });
 
