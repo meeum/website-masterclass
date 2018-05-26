@@ -1,3 +1,0 @@
-- nav under header so it can be sticky
-
-- can't use placeholders for accessibility
