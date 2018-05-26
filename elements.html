@@ -17,7 +17,7 @@
 
 
     <header class="">
-        <div class="layout-wide header-inner">
+        <div class="layout-wide ">
             <div class="logo-wrapper">
                 <a href="/">
                     <img class="logo" src="/resources/images/logo.svg" alt="Travel FUN logo">
@@ -58,8 +58,9 @@
     </div>
 
     <main role="main">
-        <div class="inner inner-main">
-            <h2 class="element-header">Typography</h2>
+
+        <section class="layout-narrow">
+            <h2 class="element-header">Typography in narrow layout</h2>
 
             <h1 class="page-title">Heading level 1 (.page-title)</h1>
             <h2 class="section-title">Heading level 2 (.section-title)</h2>
@@ -67,9 +68,9 @@
             <h4 class="">Heading level 4 (.heading-small)</h4>
             <h5>Heading level 5 (h5)</h5>
             <!-- <h6>Heading level 6 (h6)</h6> -->
-
-
-            <h2>Paragraph</h2>
+        </section>
+        <section class="layout-wide">
+            <h2>Wide layout - paragraphs</h2>
             <p>Lorem ipsum dolor sit amet,
                 <strong>consectetur</strong> adipiscing elit. In id risus quis purus mollis lobortis vel ac tellus. Nam pharetra
                 lorem quis dui commodo dapibus. Curabitur aliquet sapien vitae ligula pretium sollicitudin. Sed sed magna
@@ -288,7 +289,8 @@
 
 
 
-           
+
+
 
 
 
@@ -304,27 +306,11 @@
                 <h3>Images</h3>
 
 
-                <div>
-                    <h3>No
-                        <code>&lt;figure&gt;</code> element</h3>
-                    <p>
-                        <img src="//placekitten.com/480/480" alt="Image alt text">
-                    </p>
-                    <h3>Wrapped in a
-                        <code>&lt;figure&gt;</code> element, no
-                        <code>&lt;figcaption&gt;</code>
-                    </h3>
-                    <figure>
-                        <img src="//placekitten.com/420/420" alt="Image alt text">
-                    </figure>
-                    <h3>Wrapped in a
-                        <code>&lt;figure&gt;</code> element, with a
-                        <code>&lt;figcaption&gt;</code>
-                    </h3>
-                    <figure>
-                        <img src="//placekitten.com/420/420" alt="Image alt text">
-                        <figcaption>Here is a caption for this image.</figcaption>
-                    </figure>
+                <div class="layout-full-width">
+
+
+                    <img src="//placekitten.com/480/480" alt="Image alt text">
+
                 </div>
 
             </article>
@@ -389,286 +375,99 @@
 
 
 
+        </section>
 
 
-            <!-- <h2 class="element-header">Form elements</h2>
-                <form>
-                    <fieldset>
-                        <legend>Input types</legend>
-                        <p>
-                            <label for="input-type-color">Input Color</label>
-                            <br>
-                            <input id="input-type-color" type="color">
-                        </p>
-                        <p>
-                            <label for="input-type-date">Input Date</label>
-                            <br>
-                            <input id="input-type-date" type="date">
-                        </p>
-                        <p>
-                            <label for="input-type-datetime-local">Input Datetime-local</label>
-                            <br>
-                            <input id="input-type-datetime-local" type="datetime-local">
-                        </p>
-                        <p>
-                            <label for="input-type-email">Input Email</label>
-                            <br>
-                            <input id="input-type-email" type="email">
-                        </p>
-                        <p>
-                            <label for="input-type-file">Input File</label>
-                            <br>
-                            <input id="input-type-file" type="file">
-                        </p>
-                        <p>
-                            <label for="input-type-hidden">Input Hidden</label>
-                            <br>
-                            <input id="input-type-hidden" type="hidden">
-                        </p>
-                        <p>
-                            <label for="input-type-month">Input Month</label>
-                            <br>
-                            <input id="input-type-month" type="month">
-                        </p>
-                        <p>
-                            <label for="input-type-number">Input Number</label>
-                            <br>
-                            <input id="input-type-number" type="number">
-                        </p>
-                        <p>
-                            <label for="input-type-password">Input Password</label>
-                            <br>
-                            <input id="input-type-password" type="password">
-                        </p>
-                        <p>
-                            <label for="input-type-range">Input Range</label>
-                            <br>
-                            <input id="input-type-range" type="range">
-                        </p>
-                        <p>
-                            <label for="input-type-search">Input Search</label>
-                            <br>
-                            <input id="input-type-search" type="search">
-                        </p>
-                        <p>
-                            <label for="input-type-tel">Input Tel</label>
-                            <br>
-                            <input id="input-type-tel" type="tel">
-                        </p>
-                        <p>
-                            <label for="input-type-text">Input Text</label>
-                            <br>
-                            <input id="input-type-text" type="text">
-                        </p>
-                        <p>
-                            <label for="input-type-time">Input Time</label>
-                            <br>
-                            <input id="input-type-time" type="time">
-                        </p>
-                        <p>
-                            <label for="input-type-url">Input Url</label>
-                            <br>
-                            <input id="input-type-url" type="url">
-                        </p>
-                        <p>
-                            <label for="input-type-week">Input Week</label>
-                            <br>
-                            <input id="input-type-week" type="week">
-                        </p>
-
-                    </fieldset>
-                    <p>
-                        <label fpr="input-type-text-readonly">Input Text read only</label>
-                        <br>
-                        <input id="input-type-text-readonly" type="text" readonly="">
-                    </p>
-                    <p>
-                        <label>
-                            <input type="radio" name="input-radio" value="1"> Input radio option 1</label>
-                        <br>
-                        <label>
-                            <input type="radio" name="input-radio" value="2"> Input radio option 2</label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="radio" name="input-radio-disabled" value="1" disabled=""> Input radio option 1</label>
-                        <br>
-                        <label>
-                            <input type="radio" name="input-radio-disabled" value="2" disabled=""> Input radio option 2</label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"> Input checkbox 1</label>
-                        <br>
-                        <label>
-                            <input type="checkbox"> Input checkbox 2</label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox" disabled=""> Input checkbox 1</label>
-                        <br>
-                        <label>
-                            <input type="checkbox" disabled=""> Input checkbox 2</label>
-                    </p>
-                    <p>
-                        <label for="input-textarea">Textarea</label>
-                        <br>
-                        <textarea id="input-textarea"></textarea>
-                    </p>
-                    <p>
-                        <label for="input-textarea-disabled">Textarea disabled</label>
-                        <br>
-                        <textarea id="input-textarea-disabled" disabled=""></textarea>
-                    </p>
-                    <p>
-                        <label for="input-textarea-readonly">Textarea readonly</label>
-                        <br>
-                        <textarea id="input-textarea-readonly" readonly=""></textarea>
-                    </p>
-                    <p>
-                        <label for="input-select">Select box</label>
-                        <br>
-                        <select id="input-select">
-                            <optgroup label="Group1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </optgroup>
-                            <optgroup label="Group2">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </optgroup>
-                            <option>out of optgroup</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="input-select-multiple">Select multiple</label>
-                        <br>
-                        <select id="input-select-multiple" multiple="">
-                            <option>Use Ctrl+click to select multiple options</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="input-select-disabled">Select disabled</label>
-                        <br>
-                        <select id="input-select-disabled" disabled="">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </p>
-                    <p>
-                        <button type="button">Normal button</button>
-                        <button type="submit" onclick="return false;">Submit button</button>
-                        <button type="reset" onclick="return false;">Reset button</button>
-                        <button type="button" disabled="">Disabled button</button>
-                    </p>
-                    <p>
-                        <input type="button" value="Input normal button">
-                        <input type="submit" value="Input submit button" onclick="return false;">
-                        <input type="reset" value="Input reset button" onclick="return false;">
-                        <input type="button" value="Input disabled button" disabled="">
-                    </p>
-                    <p>
-                        <a class="button" href="#" onclick="return false;">Anchor button</a>
-                        <a class="button disabled" href="#" onclick="return false;">Anchor disabled button</a>
-                    </p>
-                </form> -->
-
-
-        </div>
-        <!-- inner-main -->
     </main>
 
     <footer>
-        <div class="inner inner-footer content-area-grid-narrow">
-            <div class="contact-details">
-                <h3>Travel Fun PTY LTD</h3>
-                <address>
-    
-                    <ul>
-                        <li>999 Sydney Rd, Carlton VIC 3000</li>
-                        <li>Ph:
-                            <a href="tel:0312345678">(03) 1234 5678</a>
-                        </li>
-                        <li>Email:
-                            <a href="mailto:me@me.com">me@me.com</a>
-                        </li>
-                    </ul>
-    
-                </address>
-                <p>&copy; 2018 Travel Fun PTY LTD</p>
-            </div>
-    
-            <div class="socials">
-                <nav class="nav-social-links">
-                    <h3>Follow us:</h3>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/meeum" class="social-link">
-                                <img src="/resources/icons/icon-facebook.svg" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/meeum" class="social-link">
-                                <img src="/resources/icons/icon-twitter.svg" alt="Twitter">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/meeum/" class="social-link">
-                                <img src="/resources/icons/icon-instagram.svg" alt="Instagram">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-    
-            <!-- Begin MailChimp Signup Form -->
-            <div id="mc_embed_signup">
-                <form action="https://meeum.us17.list-manage.com/subscribe/post?u=c44a89c3ce71c088efe947446&amp;id=76c8d8dc57" method="post"
-                    id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                        <h2 class="subtitle">Get our best offers in you inbox</h2>
-                        <div class="indicates-required">
-                            <span class="asterisk">*</span> indicates required</div>
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address
-                                <span class="asterisk">*</span>
-                            </label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+
+        <div class="footer-subscribe">
+            <div class="layout-wide">
+
+                <!-- Begin MailChimp Signup Form -->
+
+                <div id="mc_embed_signup">
+                    <form action="https://meeum.us17.list-manage.com/subscribe/post?u=c44a89c3ce71c088efe947446&amp;id=76c8d8dc57" method="post"
+                        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <h2 class="subtitle">Subscribe for the latest deals</h2>
+                            <div class="indicates-required">
+                                <span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group">
+                                <label for="mce-MMERGE1">Name </label>
+                                <input type="text" value="" name="MMERGE1" class="" id="mce-MMERGE1">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address
+                                    <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_c44a89c3ce71c088efe947446_76c8d8dc57" tabindex="-1" value="">
+                            </div>
+                            <div class="clear">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            </div>
                         </div>
-                        <div class="mc-field-group">
-                            <label for="mce-FNAME">First Name </label>
-                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                        </div>
-                        <div class="mc-field-group">
-                            <label for="mce-LNAME">Last Name </label>
-                            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                        </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_c44a89c3ce71c088efe947446_76c8d8dc57" tabindex="-1" value="">
-                        </div>
-                        <div class="clear">
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[1] = 'MMERGE1'; ftypes[1] = 'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
                 <!--End mc_embed_signup-->
+
+                <!--End mc_embed_signup-->
+
             </div>
-    
+            <!-- inner-footer -->
         </div>
-        <!-- inner-footer -->
+        <!-- footer-subscribe -->
+        <div class="footer-notices">
+            <div class="layout-wide">
+                <p class="copyright">&copy; 2018 Time To Travel PTY LTD</p>
+
+
+
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/meeum" class="social-link">
+                            <img src="/resources/icons/icon-facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/meeum" class="social-link">
+                            <img src="/resources/icons/icon-twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/meeum/" class="social-link">
+                            <img src="/resources/icons/icon-instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+        <!-- .footer-notices -->
     </footer>
+
+
+    <!-- <video autoplay muted loop class="bg-video" poster="/resources/video/travel.jpg" src="/resources/video/travel.mp4">
+    
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+    
+        </video> -->
+
+
+
+
     <!-- https://github.com/jhildenbiddle/css-vars-ponyfill -->
     <!-- <script src="https://unpkg.com/css-vars-ponyfill@1"></script> -->
 
@@ -678,7 +477,6 @@
     </script>
     <script src="/resources/js/jquery-3.3.1.min.js"></script>
     <script src="/resources/js/scripts.js"></script>
-
 
 </body>
 
