@@ -51,12 +51,12 @@
 
 @media screen and (min-width: 800px) {
   :root {
-    --font-size-site-title: 3rem;
-    --font-size-page-title: 5rem;
-    --font-size-section-title: 3rem; /* 48px */
-    --font-size-sub-title: 1.5rem;
-    --font-size-heading-small: 1rem;
-    --font-size-detail-copy: 0.875rem;
+    --font-size-site-title: 54px;
+    --font-size-page-title: 80px;
+    --font-size-section-title: 48px; 
+    --font-size-sub-title: 24px;
+    --font-size-heading-small: 16px;
+    --font-size-detail-copy: 14px;
   }
 }
 
