@@ -37,7 +37,7 @@
   --secondary-bg-color: var(--color-almost-white);
   --alternative-bg-color: var(--color-primary-b);
 
-  --padder: 2%;
+  --padder: 3%;
   --spacer: 20px;
   --spacer-large: 80px;
   --transition-time: 0.3s;
@@ -61,6 +61,8 @@
     --font-size-sub-title: 24px;
     --font-size-heading-small: 16px;
     --font-size-detail-copy: 14px;
+
+    --padder: 2%;
   }
 }
 
