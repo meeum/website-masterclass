@@ -329,6 +329,7 @@ header .layout-wide {
 .nav-inner .active {
   border-bottom-color: currentColor;
   font-weight: 700;
+  color: #fff;
 }
 
 .nav-inner a:hover,
