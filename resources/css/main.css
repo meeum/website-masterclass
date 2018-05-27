@@ -93,18 +93,12 @@ body {
   /* margin: 0 var(--padder); */
 }
 
-
-
 /* common elements */
 img,
 video {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
 
 /******************************************************************************************
 *HEADINGS AND TYPE
@@ -171,14 +165,12 @@ a:visited {
   color: var(--color-secondary-b);
 }
 
-
-
 /******************************************************************************************
 *LAYOUTS
 ******************************************************************************************/
 .layout-full-width,
 .layout-wide,
-.layout-narrow  {
+.layout-narrow {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--spacer-large);
@@ -200,11 +192,9 @@ a:visited {
   max-width: var(--area-narrow);
 }
 
-
 /******************************************************************************************
 *HEADER
 ******************************************************************************************/
-
 
 header {
   padding-top: var(--padder);
@@ -241,8 +231,6 @@ header .layout-wide {
   text-align: right;
 }
 
-
-
 /******************************************************************************************
 *NAVIGATION
 ******************************************************************************************/
@@ -264,9 +252,8 @@ header .layout-wide {
 }
 
 @media screen and (min-width: 800px) {
-
   .navigation {
-      padding: 20px 0;
+    padding: 20px 0;
   }
   .nav-prompt {
     display: none;
@@ -349,8 +336,6 @@ header .layout-wide {
   }
 }
 
-
-
 /******************************************************************************************
 *FOOTER
 ******************************************************************************************/
@@ -420,9 +405,7 @@ header .layout-wide {
   }
 }
 
-
 /* grids */
-
 
 @media screen and (min-width: 800px) {
   .content-area-grid {
@@ -494,7 +477,6 @@ input[type="submit"] {
   border: none; /* talk about this too */
 }
 
-
 .button {
   background-color: var(--color-primary-a);
   color: var(--heading-text-color);
@@ -515,7 +497,6 @@ input[type="submit"] {
   background-color: transparent !important;
   color: var(--error-color) !important;
 }
-
 
 /* background video */
 .bg-video {
@@ -567,13 +548,6 @@ a[href*="xls"] {
   background-image: url(../icons/icon-xlsx.svg);
 }
 
-/* this fucks with the gallery so get rid of it*/
-/* a[href*="jpg"],
-a[href*="png"],
-a[href*="gif"] {
-  background-image: url(../icons/icon-img.svg);
-} */
-
 /* hero */
 .hero-module {
   position: relative;
@@ -581,19 +555,15 @@ a[href*="gif"] {
 
 .hero-module img {
   width: 100%;
-
 }
 
-
-
 @media screen and (min-width: 800px) {
-  
   .hero-content {
     text-align: center;
     align-items: center;
     display: flex;
     height: 100%;
-    
+
     /* background: -moz-linear-gradient(
       top,
       rgba(0, 0, 0, 0) 0%,
@@ -669,11 +639,14 @@ a[href*="gif"] {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
- 
+  overflow: hidden; /* float overflow hack */
+}
+
+.image-gallery li {
+  float: left;
+  max-width: 250px;
+  margin: 10px;
 }
 
 .image-gallery a img {
@@ -688,10 +661,17 @@ a[href*="gif"] {
 }
 
 @supports (display: grid) {
-
-
+  .image-gallery li {
+    float: none;
+    max-width: 100%;
+    margin: 0;
+  }
+  .image-gallery ul {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
-
 
 /* animations */
 
@@ -712,8 +692,6 @@ a[href*="gif"] {
 
 main {
   animation: fadein 0.5s 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0); 
+
   /* position: relative;*/
 }
