@@ -60,17 +60,5 @@ function imageGallery() {
 
 imageGallery();
 
-// TODO - unfuck this
-// // load video
-// function loadVideo() {
- 
-//   $('.load-later').attr("src", $(this).attr("data-src"));
-//   //$(".load-later").removeAttr("data-src");
-
-  
-// }
-
-// loadVideo();
-
 
 
