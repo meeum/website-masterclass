@@ -21,7 +21,7 @@
   --color-primary-b: #4952a3;
   --color-primary-c: #ff5b5e;
 
-  --color-secondary-a: #53c1a9;
+  /* --color-secondary-a: #53c1a9; */
   --color-secondary-b: #28313b;
   --color-secondary-c: #97a4b1;
   --color-secondary-d: #319bf5;
@@ -481,10 +481,13 @@ input[type="submit"] {
   border-radius: 30px;
   padding: 20px;
   min-width: 200px;
+  transition: all var(--transition-time);
+ 
 }
 
 .button:hover {
-  background-color: var(--color-secondary-a);
+  background-color: var(--heading-text-color);
+  color: var(--color-primary-a);
 }
 
 /* mailchimp overrides*/
