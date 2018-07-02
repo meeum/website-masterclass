@@ -1,3 +1,5 @@
+// run vars script
+
 cssVars();
 
 // open mobile nav
