@@ -387,7 +387,7 @@ header .layout-wide {
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
 }
 .social-link:hover {
-  filter: unset;
+  /* filter: unset; */
   transform: scale(1);
 }
 
@@ -461,7 +461,10 @@ label {
 
 /* https://css-tricks.com/styling-texty-inputs-only/ */
 
-input:not([type="submit"]):not([type="file"]) {
+/* input:not([type="submit"]):not([type="file"]) */
+
+input[type="text"],
+input[type="email"] {
   border: 1px solid var(--color-secondary-c);
   border-radius: 4px; /* could use a variable here*/
   background-color: #fff;
