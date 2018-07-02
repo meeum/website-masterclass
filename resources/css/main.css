@@ -58,9 +58,6 @@
     --font-size-site-title: 54px;
     --font-size-page-title: 80px;
     --font-size-section-title: 48px;
-    /* --font-size-sub-title: 24px;
-    --font-size-heading-small: 16px; */
-    /* --font-size-detail-copy: 14px; */
 
     --padder: 2%;
   }
@@ -144,9 +141,7 @@ h4,
   text-transform: uppercase;
 }
 
-h5,
-.detail-copy {
-  /* font-size: var(--font-size-detail-copy); */
+h5 {
   line-height: 1rem;
 }
 
