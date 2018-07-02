@@ -1,64 +1,50 @@
+cssVars();
+
+// open mobile nav
+
+/*
+
+here's a comment
+
+*/
 
 
-// nav
-function active_menu() {
-    var url = window.location.href;
-    $(".nav-inner a")
-      .filter(function() {
-        return this.href == url;
-      })
-      .addClass("active");
-}
+$('.nav-prompt').click(function () {
 
-active_menu();
-
-
-
-// open mobile menu
-$(".nav-prompt").click(function () {
-  $(".nav-inner").attr("aria-expanded", function(index, attr) {
-    return attr == "true" ? "false" : "true";
-  });
-
-  // if ($(".nav-prompt").text() == "Open Navigation") {
-  //   $(this).text("Close Navigation").addClass('nav-is-open').removeClass('nav-is-closed');
-  // } else {
-  //   $(this).text("Open Navigation").addClass("nav-is-closed").removeClass("nav-is-open");;
-  // }; 
-
-  if ($(".nav-prompt").text() == "Open Navigation") {
-    $(this).text("Close Navigation");
+  if ($('.nav-inner').attr('aria-expanded') === 'false') {
+    $('.nav-inner').attr('aria-expanded', 'true');
   } else {
-    $(this).text("Open Navigation");
-  }; 
-
-  
-});
+    $('.nav-inner').attr('aria-expanded', 'false');
+  };
 
 
-
-
-//iframe
-
-
-function iframeFix() {
-  $("iframe").wrap('<div class="iframe-container"></div>');
-}
-
-iframeFix();
+  if ($('.nav-prompt').text() === 'Open Navigation') {
+    $('.nav-prompt').text('Close Navigation');
+  } else {
+    $(".nav-prompt").text("Open Navigation");
+  }
+})
 
 // image gallery
 function imageGallery() {
-  if (!$(".image-gallery").length) {
+  // if there's no image gallery, do nothing.
+  if (!$('.image-gallery').length) {
     return;
   }
-  // gallery http://dbrekalo.github.io/simpleLightbox/
-
-  $(".image-gallery a").simpleLightbox();
-
+  $('.image-gallery a').simpleLightbox();
 }
 
 imageGallery();
 
 
+// nav active class
 
+function activeMenu() {
+  var url = window.location.href;
+
+  $('.nav-inner a').filter(function () {
+    return this.href == url;
+  }).addClass('active');
+}
+
+activeMenu();
