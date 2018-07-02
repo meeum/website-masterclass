@@ -478,9 +478,9 @@ input[type="submit"] {
 .button {
   background-color: var(--color-primary-a);
   color: var(--heading-text-color);
-  border-radius: 4rem;
-  padding: 1rem;
-  min-width: 208px;
+  border-radius: 30px;
+  padding: 20px;
+  min-width: 200px;
 }
 
 .button:hover {
