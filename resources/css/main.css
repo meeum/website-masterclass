@@ -279,12 +279,15 @@ header .layout-wide {
   transition: all var(--transition-time);
 }
 
-@media screen and (min-width: 800px) {
-  .nav-inner a {
-    border-bottom: 2px solid transparent;
-    padding: 0;
-  }
+.nav-inner a:hover,
+.nav-inner a:focus {
+
+  color: #fff;
+  border-bottom-color: currentColor;
+ 
 }
+
+
 
 .nav-inner .active {
   border-bottom-color: currentColor;
@@ -292,22 +295,83 @@ header .layout-wide {
   color: #fff;
 }
 
-.nav-inner a:hover,
-.nav-inner a:focus {
-  /* color: var(--color-secondary-e); */
-  color: #fff;
-  border-bottom-color: currentColor;
-  /* transform: rotate(-15deg); */
-  /* transform: scale(1.1); */
-  /* text-decoration: underline; */
-}
+/* nav - desktop view */
 
 @media screen and (min-width: 800px) {
+
+  .nav-prompt {
+    display: none;
+  }
+
+  
+  .navigation {
+    padding: 20px 0;
+  }
+  
+
   .nav-inner ul {
     display: flex;
     justify-content: space-between;
   }
+
+
+  .nav-inner a {
+    border-bottom: 2px solid transparent;
+    padding: 0; 
+  }
+
 }
+
+
+/* let's open and close this thing */
+
+@media screen and (max-width: 800px) {
+
+  .nav-inner {
+
+    transition: var(--transition-time) ease-in-out;
+    overflow: hidden; /* so we can't see it when it's closed */
+  
+  }
+
+  .nav-inner[aria-expanded="false"] {
+    max-height: 0;
+  }
+
+  .nav-inner[aria-expanded="true"] {
+    max-height: 100vh;
+  }
+
+}
+/* 
+interactions
+
+
+this could be fuckery
+@media screen and (max-width: 800px) {
+  padding: 0;
+}
+
+
+
+@media screen and (min-width: 800px) {
+  .nav-inner[aria-expanded="false"] {
+    max-height: 100vh;
+  }
+}
+
+.nav-inner[aria-expanded="true"] {
+  max-height: 100vh;
+}
+
+*/
+
+
+
+
+
+
+
 
 /******************************************************************************************
 *FOOTER
