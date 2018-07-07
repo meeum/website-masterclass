@@ -67,17 +67,21 @@ main {
   display: block; /* discuss */
 }
 
-html {
+* {
   box-sizing: border-box;
+}
+
+html {
+  
   height: 100%;
   font-size: 16px;
 }
 
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
+} */
 
 body {
   /* background: url(/resources/video/travel.jpg) no-repeat fixed 0 0 / cover var(--body-bg-color); */
@@ -183,9 +187,9 @@ a:visited {
   max-width: var(--area-wide);
 }
 
-/* .layout-narrow {
+.layout-narrow {
   max-width: var(--area-narrow);
-} */
+}
 
 /******************************************************************************************
 *HEADER
@@ -243,43 +247,16 @@ header .layout-wide {
   width: 100%;
   background-color: var(--alternative-bg-color);
   color: var(--alternative-text-color);
-  border-top: 1px solid #34495e;
-}
-
-@media screen and (min-width: 800px) {
-  .navigation {
-    padding: 20px 0;
-  }
-  .nav-prompt {
-    display: none;
-  }
+  border-top: 1px solid #000;
 }
 
 .nav-inner {
-  clear: both;
-  transition: 0.2s ease-in-out;
-  overflow: hidden;
   margin-bottom: 0;
 }
 
 .nav-inner ul {
-  padding: 0 var(--padder);
   padding: 0;
   margin: 0;
-}
-
-.nav-inner[aria-expanded="false"] {
-  max-height: 0;
-}
-
-@media screen and (min-width: 800px) {
-  .nav-inner[aria-expanded="false"] {
-    max-height: 100vh;
-  }
-}
-
-.nav-inner[aria-expanded="true"] {
-  max-height: 100vh;
 }
 
 .nav-inner li {
@@ -288,11 +265,12 @@ header .layout-wide {
 }
 
 .nav-inner a {
+  display: block;
+  
   color: var(--alternative-text-color);
-  /* font-size: 1rem; */
   font-family: var(--font-heading);
   padding: 20px 5px;
-  display: block;
+  
   text-decoration: none;
   text-transform: uppercase;
 
