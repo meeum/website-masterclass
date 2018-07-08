@@ -1,4 +1,9 @@
+Here's the content for the Time To Travel website.  All images are in the resources folder.
+We're on a tight deadline and need this in three days!
 
+Good luck!!!!
+
+##############################################################################################
 ## HOMEPAGE
 
 
@@ -17,11 +22,21 @@ Round the world music festival tour for 4 mid-20s pleasure seekers.
 
 Whatever your travel needs are, we're here to serve them.
 
+
+Put full width image here
+
+Why book with Time To Travel
+
+We're constantly finding the best deals around the world to share with you.
+
+For close to a decade, our independent travel experts have been doing what they do best - making your travel dreams come true.
+
+We provide personalised service, unbiased advice and excellent value to travellers, both here in Australia and abroad.
 		
 	
 
 
-
+##############################################################################################
 ## ABOUT US
 
 All about Time to Travel
@@ -51,3 +66,48 @@ He specialises in outback adventures and is the only person in the office to hav
 
 Josh Jones
 Josh is the connections guru in the office. He once flew around the world in 40 hours, just to prove that he could.
+
+
+##############################################################################################
+## Media page content is incomplete. Please use this dummy content in the meantime
+
+
+An example of a landing page
+
+On this page we'll add a bunch of different media. If this were a real Travel Agency website, these pages could be for different places.
+
+
+Video
+A video about something
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam porttitor metus. Phasellus mollis rhoncus nisi in iaculis. Nullam quis turpis et lorem posuere auctor ut eget dui. Quisque fringilla tempus purus, in laoreet urna luctus quis.
+
+
+Insert Washington DC video here 
+
+
+Audio
+A song about something
+Here are some lovely words about our song.
+
+
+New York image gallery
+New York City is the most populous city in the United States. It lies at the mouth of the Hudson River in the southernmost part of the state, which is part of the Mid-Atlantic region of the U.S. The city spans a land area of 305 square miles.
+
+New York City has a population of approximately 8.2 million people. The New York Metropolitan Area, which spans lower New York, northern New Jersey, and southwestern Connecticut, has a population of 18.7 million, making it the largest metropolitan area in the U.S. As of 2014, it was one of the 15 largest metro areas in the world.
+
+Insert image gallery here please.
+
+##############################################################################################
+## Contact page
+
+Come and say hi
+Drop in and see us!
+We're located at 321 Street Rd, Suburb State 1234.
+
+Send us an email to email@email.com
+
+Give us a call on 1234 5678
+
+Or you can SMS us at 1234 5678
+
+We'd love a map too please!
