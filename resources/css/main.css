@@ -210,9 +210,7 @@ header .layout-wide {
   float: left;
 }
 
-.logo-wrapper a:hover img {
-  animation: spin 0.5s linear;
-}
+
 
 .logo {
   max-width: 50px;
@@ -709,12 +707,27 @@ a[href*="xls"] {
   }
 }
 
+main {
+  /* animation: fadein 0.5s 1; */
+  animation-name: fadein;
+  animation-duration: 2s;
+
+}
+
+
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
 
-main {
-  animation: fadein 0.5s 1;
+.logo-wrapper a:hover img {
+  /* animation: spin 0.5s linear; */
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
 }
+
+
