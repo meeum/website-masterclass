@@ -160,9 +160,9 @@ a:focus {
   color: var(--color-secondary-b);
 }
 
-a:visited {
+/* a:visited {
   color: var(--color-secondary-b);
-}
+} */
 
 /******************************************************************************************
 *LAYOUTS
