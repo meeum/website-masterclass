@@ -229,7 +229,7 @@
 
     </div>
 
-
+<!--
     <h2 class="">Embedded iFrames</h2>
 
     <h3>Google map iframe</h3>
@@ -246,7 +246,7 @@
         allowfullscreen></iframe>
 
 
-
+-->
 
 
     <h2>Media</h2>
